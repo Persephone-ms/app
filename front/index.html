@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Padaria</title>
+</head>
+<body>
+
+    <h1 class="text-center mt-3 px-5">Padaria Dona Luzia - Sua Fome Nossa Alegria </h1>
+    
+    <form class="border border-danger-subtle rounded-4 mx-5 mt-3 p-3">
+        <h3 class="text-center mb-3">Adicionar Produto/serviço:</h3>
+        <div class="form-group mb-3">
+            <label for="nome_produto">Nome do Produto/serviço: </label>
+            <input 
+                class="form-contol shadow-sm"
+                id="nome_produto"
+                name="nome_produto"
+                type="text"
+                placeholder="Adicionar Nome do Produto"
+                />
+
+        </div>
+        <div class="form-group mb-3">
+            <label for="quantidade">Quantidade: </label>
+            <input 
+                class="form-contol shadow-sm"
+                id="quantidade"
+                name="quantidade"
+                min="1"
+                type="number"
+                placeholder="Adicionar Quantidade"
+                />
+        </div>
+        <div class="form-group mb-3">
+            <label for="valor">Valor: </label>
+            <input
+                class="form-contol shadow-sm"
+                id="valor"
+                name="valor"
+                step="0.1" 
+                type="number"
+                placeholder="Valor do Produto"   
+                />
+        </div>
+        <button class="btn btn-outline-dark mt-3 w-100 type="submit">
+            Adicionar Produto
+        </button>
+    </form>
+</body>
+</html>
